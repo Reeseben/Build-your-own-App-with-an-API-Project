@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5D4D51626BB29070070B3FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4D51526BB29070070B3FC /* AppDelegate.swift */; };
+		B5D4D51826BB29070070B3FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4D51726BB29070070B3FC /* SceneDelegate.swift */; };
+		B5D4D51A26BB29070070B3FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4D51926BB29070070B3FC /* ViewController.swift */; };
+		B5D4D51D26BB29070070B3FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D4D51B26BB29070070B3FC /* Main.storyboard */; };
+		B5D4D51F26BB29080070B3FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D4D51E26BB29080070B3FC /* Assets.xcassets */; };
+		B5D4D52226BB29080070B3FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D4D52026BB29080070B3FC /* LaunchScreen.storyboard */; };
+		B5D4D53226BB2DD70070B3FC /* MTGCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4D53126BB2DD70070B3FC /* MTGCard.swift */; };
+		B5D4D53426BB2E790070B3FC /* MTGCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4D53326BB2E790070B3FC /* MTGCardController.swift */; };
+		B5D4D53626BB2F540070B3FC /* MTGCardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D4D53526BB2F540070B3FC /* MTGCardError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5D4D51226BB29070070B3FC /* MTG Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTG Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D4D51526BB29070070B3FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5D4D51726BB29070070B3FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B5D4D51926BB29070070B3FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5D4D51C26BB29070070B3FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5D4D51E26BB29080070B3FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5D4D52126BB29080070B3FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5D4D52326BB29080070B3FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D4D53126BB2DD70070B3FC /* MTGCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGCard.swift; sourceTree = "<group>"; };
+		B5D4D53326BB2E790070B3FC /* MTGCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGCardController.swift; sourceTree = "<group>"; };
+		B5D4D53526BB2F540070B3FC /* MTGCardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGCardError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5D4D50F26BB29070070B3FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5D4D50926BB29070070B3FC = {
+			isa = PBXGroup;
+			children = (
+				B5D4D51426BB29070070B3FC /* MTG Cards */,
+				B5D4D51326BB29070070B3FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5D4D51326BB29070070B3FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4D51226BB29070070B3FC /* MTG Cards.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5D4D51426BB29070070B3FC /* MTG Cards */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4D53026BB296C0070B3FC /* Models */,
+				B5D4D52D26BB295D0070B3FC /* Controllers */,
+				B5D4D52B26BB294E0070B3FC /* Views */,
+				B5D4D52A26BB29450070B3FC /* Helper and Extension */,
+				B5D4D52926BB29250070B3FC /* Resources */,
+			);
+			path = "MTG Cards";
+			sourceTree = "<group>";
+		};
+		B5D4D52926BB29250070B3FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4D51526BB29070070B3FC /* AppDelegate.swift */,
+				B5D4D51726BB29070070B3FC /* SceneDelegate.swift */,
+				B5D4D51E26BB29080070B3FC /* Assets.xcassets */,
+				B5D4D52326BB29080070B3FC /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B5D4D52A26BB29450070B3FC /* Helper and Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4D53526BB2F540070B3FC /* MTGCardError.swift */,
+			);
+			path = "Helper and Extension";
+			sourceTree = "<group>";
+		};
+		B5D4D52B26BB294E0070B3FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4D52C26BB29540070B3FC /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5D4D52C26BB29540070B3FC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4D51B26BB29070070B3FC /* Main.storyboard */,
+				B5D4D52026BB29080070B3FC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B5D4D52D26BB295D0070B3FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4D52F26BB29650070B3FC /* ViewControllers */,
+				B5D4D52E26BB29600070B3FC /* ModelControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B5D4D52E26BB29600070B3FC /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4D53326BB2E790070B3FC /* MTGCardController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		B5D4D52F26BB29650070B3FC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4D51926BB29070070B3FC /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B5D4D53026BB296C0070B3FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4D53126BB2DD70070B3FC /* MTGCard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5D4D51126BB29070070B3FC /* MTG Cards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5D4D52626BB29080070B3FC /* Build configuration list for PBXNativeTarget "MTG Cards" */;
+			buildPhases = (
+				B5D4D50E26BB29070070B3FC /* Sources */,
+				B5D4D50F26BB29070070B3FC /* Frameworks */,
+				B5D4D51026BB29070070B3FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MTG Cards";
+			productName = "MTG Cards";
+			productReference = B5D4D51226BB29070070B3FC /* MTG Cards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5D4D50A26BB29070070B3FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B5D4D51126BB29070070B3FC = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = B5D4D50D26BB29070070B3FC /* Build configuration list for PBXProject "MTG Cards" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5D4D50926BB29070070B3FC;
+			productRefGroup = B5D4D51326BB29070070B3FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5D4D51126BB29070070B3FC /* MTG Cards */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5D4D51026BB29070070B3FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D4D52226BB29080070B3FC /* LaunchScreen.storyboard in Resources */,
+				B5D4D51F26BB29080070B3FC /* Assets.xcassets in Resources */,
+				B5D4D51D26BB29070070B3FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5D4D50E26BB29070070B3FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D4D51A26BB29070070B3FC /* ViewController.swift in Sources */,
+				B5D4D53426BB2E790070B3FC /* MTGCardController.swift in Sources */,
+				B5D4D51626BB29070070B3FC /* AppDelegate.swift in Sources */,
+				B5D4D53626BB2F540070B3FC /* MTGCardError.swift in Sources */,
+				B5D4D53226BB2DD70070B3FC /* MTGCard.swift in Sources */,
+				B5D4D51826BB29070070B3FC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5D4D51B26BB29070070B3FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5D4D51C26BB29070070B3FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5D4D52026BB29080070B3FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5D4D52126BB29080070B3FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5D4D52426BB29080070B3FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5D4D52526BB29080070B3FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5D4D52726BB29080070B3FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5WKQ59823;
+				INFOPLIST_FILE = "MTG Cards/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BenErekson.MTG-Cards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5D4D52826BB29080070B3FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5WKQ59823;
+				INFOPLIST_FILE = "MTG Cards/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BenErekson.MTG-Cards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5D4D50D26BB29070070B3FC /* Build configuration list for PBXProject "MTG Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D4D52426BB29080070B3FC /* Debug */,
+				B5D4D52526BB29080070B3FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5D4D52626BB29080070B3FC /* Build configuration list for PBXNativeTarget "MTG Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D4D52726BB29080070B3FC /* Debug */,
+				B5D4D52826BB29080070B3FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5D4D50A26BB29070070B3FC /* Project object */;
+}

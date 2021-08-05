@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8pn-3b-3uR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Please wait-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MTG_Cards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hpn-Bz-CMp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="739"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ExJ-Eo-sLQ">
+                                        <rect key="frame" x="20.5" y="0.0" width="373" height="521.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ExJ-Eo-sLQ" secondAttribute="height" multiplier="5:7" id="oux-xR-HuZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="(Description)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZz-GB-zty">
+                                        <rect key="frame" x="41.5" y="529.5" width="331" height="209.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XZz-GB-zty" firstAttribute="width" secondItem="hpn-Bz-CMp" secondAttribute="width" multiplier="0.8" id="J6d-WI-B6m"/>
+                                    <constraint firstItem="ExJ-Eo-sLQ" firstAttribute="width" secondItem="hpn-Bz-CMp" secondAttribute="width" multiplier="0.9" id="UsR-Hv-I9t"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="9dM-AT-ray">
+                                <rect key="frame" x="41.5" y="832" width="331" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIl-XC-7cr">
+                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FhA-fb-rAl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gw1-eG-X9R">
+                                        <rect key="frame" x="177.5" y="0.0" width="153.5" height="30"/>
+                                        <state key="normal" title="New Card"/>
+                                        <connections>
+                                            <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jGM-41-YJP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9dM-AT-ray" firstAttribute="top" secondItem="hpn-Bz-CMp" secondAttribute="bottom" constant="5" id="BlC-ou-ClD"/>
+                            <constraint firstItem="hpn-Bz-CMp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IDR-rH-Rao"/>
+                            <constraint firstItem="hpn-Bz-CMp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TEJ-Wg-a3n"/>
+                            <constraint firstItem="9dM-AT-ray" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.8" id="WBd-st-WoT"/>
+                            <constraint firstItem="9dM-AT-ray" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="iMn-0n-CP3"/>
+                            <constraint firstItem="9dM-AT-ray" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oMH-65-tPJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hpn-Bz-CMp" secondAttribute="trailing" id="zYn-Id-wXh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Please wait" id="u5T-za-bUh">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="RN5-Cf-wC1">
+                            <connections>
+                                <action selector="searchButtonTapped:" destination="BYZ-38-t0r" id="GEl-7i-QoX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cardImageView" destination="ExJ-Eo-sLQ" id="hMP-7B-lof"/>
+                        <outlet property="descriptionTextLable" destination="XZz-GB-zty" id="yHH-5o-SlF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D0C-iC-ykO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8pn-3b-3uR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EYZ-go-oqV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Unf-IJ-qeU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rsh-Hw-6Gv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
